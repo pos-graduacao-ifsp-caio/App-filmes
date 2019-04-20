@@ -8,7 +8,7 @@
     <!-- Toolbar -->
     <include layout="@layout/toolbar"/>
 
-    <!-- Fragment de Jogo -->
+    <!-- Fragment de Filme -->
     <FrameLayout
         android:id="@+id/fragment"
         android:layout_width="match_parent"

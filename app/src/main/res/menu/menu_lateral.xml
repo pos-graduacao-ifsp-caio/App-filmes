@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Modo texto -->
+    <!-- Modo título -->
     <item android:id="@+id/modoTituloMenuItem"
           android:title="Modo título"
           android:icon="@drawable/cinema"
     />
-    <!-- Modo gráfico -->
+    <!-- Modo id -->
     <item android:id="@+id/modoIdMenuItem"
           android:title="Modo id"
           android:icon="@drawable/cinema"
