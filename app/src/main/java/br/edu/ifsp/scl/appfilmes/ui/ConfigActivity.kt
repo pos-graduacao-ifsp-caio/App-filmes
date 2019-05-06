@@ -1,7 +1,8 @@
-package br.edu.ifsp.scl.appfilmes
+package br.edu.ifsp.scl.appfilmes.ui
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import br.edu.ifsp.scl.appfilmes.R
 
 
 class ConfigActivity : AppCompatActivity() {

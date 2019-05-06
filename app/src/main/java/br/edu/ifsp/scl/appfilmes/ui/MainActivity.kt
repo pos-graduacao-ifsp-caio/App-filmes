@@ -1,10 +1,11 @@
-package br.edu.ifsp.scl.appfilmes
+package br.edu.ifsp.scl.appfilmes.ui
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
+import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import br.edu.ifsp.scl.appfilmes.R
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar.*
 
@@ -20,7 +21,10 @@ class MainActivity : AppCompatActivity() {
 
 
         val abreFechaToogle: ActionBarDrawerToggle =
-            ActionBarDrawerToggle(this, menuLateralDrawerLayout, toolbar, R.string.menu_aberto, R.string.menu_fechado)
+            ActionBarDrawerToggle(this, menuLateralDrawerLayout, toolbar,
+                R.string.menu_aberto,
+                R.string.menu_fechado
+            )
 
         menuLateralDrawerLayout.addDrawerListener(abreFechaToogle)
         abreFechaToogle.syncState()
@@ -34,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     private fun substituiFragment(modoFragment: String){
         // verifica qual vai instanciar
 
-        val modoFilmeFragment = if (modoFragment.equals("MODO_TITULO")) ModoTituloFragment () else ModoIdFragment()
+        val modoFilmeFragment = if (modoFragment.equals("MODO_TITULO")) ModoTituloFragment() else ModoIdFragment()
 
         // Transação para substituição de fragment
         val fragmentTransaction = supportFragmentManager.beginTransaction()

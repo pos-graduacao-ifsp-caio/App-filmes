@@ -1,10 +1,10 @@
-package br.edu.ifsp.scl.appfilmes
+package br.edu.ifsp.scl.appfilmes.ui
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import br.edu.ifsp.scl.appfilmes.R
 import kotlinx.android.synthetic.main.toolbar.*
 
 class ModoTituloFragment: ModoFilmeFragment() {
