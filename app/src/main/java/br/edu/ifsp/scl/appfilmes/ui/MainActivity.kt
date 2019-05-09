@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     private fun substituiFragment(modoFragment: String){
         // verifica qual vai instanciar
 
-        val modoFilmeFragment = if (modoFragment.equals("MODO_TITULO")) ModoTituloFragment() else ModoIdFragment()
+        val modoFilmeFragment = if (modoFragment.equals("MODO_TITULO")) BuscaTituloFragment() else BuscaIdFragment()
 
         // Transação para substituição de fragment
         val fragmentTransaction = supportFragmentManager.beginTransaction()

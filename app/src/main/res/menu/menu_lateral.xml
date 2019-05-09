@@ -3,16 +3,16 @@
     <!-- Modo título -->
     <item android:id="@+id/modoTituloMenuItem"
           android:title="Modo título"
-          android:icon="@drawable/cinema"
+          android:icon="@drawable/ic_cinema"
     />
     <!-- Modo id -->
     <item android:id="@+id/modoIdMenuItem"
           android:title="Modo id"
-          android:icon="@drawable/cinema"
+          android:icon="@drawable/ic_cinema"
     />
     <!-- Sair -->
     <item android:id="@+id/sairMenuItem"
           android:title="Sair"
-          android:icon="@drawable/ic_launcher_foreground"
+          android:icon="@drawable/ic_cinema"
     />
 </menu>

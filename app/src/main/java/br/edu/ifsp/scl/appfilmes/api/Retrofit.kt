@@ -3,7 +3,7 @@ package br.edu.ifsp.scl.appfilmes.api
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class Retrofit {
+object Retrofit {
 
     private var mFilmesApi: FilmesApi? = null
 

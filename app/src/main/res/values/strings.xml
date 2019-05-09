@@ -10,4 +10,12 @@
     <string name="trabalho_da_disciplina">Trabalho da Disciplina</string>
     <string name="menu_aberto">Menu aberto</string>
     <string name="menu_fechado">Menu fechado</string>
+    <string name="buscar">Buscar</string>
+    <string name="modo_titulo">Modo título</string>
+    <string name="modo_id">Modo ID</string>
+    <string name="por_favor_aguarde">Por favor, aguarde…</string>
+    <string name="entre_com_o_titulo_do_filme">Entre com o titulo do filme</string>
+    <string name="entre_com_o_id_do_filme">Entre com o ID do filme</string>
+    <string name="erro_ao_buscar_filme" formatted="false">Erro ao buscar filme: %s</string>
+    <string name="erro_desconhecido">Erro desconhecido</string>
 </resources>
