@@ -39,6 +39,8 @@ abstract class BuscaFragment: Fragment() {
                 val filme = response.body()
                 if (filme?.isErro() != false) {
                     mostrarErro(filme?.erro)
+                } else {
+                    startActivity(DetalhesActivity.getCallingIntent(context, filme))
                 }
             }
 

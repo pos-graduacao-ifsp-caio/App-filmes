@@ -18,4 +18,16 @@
     <string name="entre_com_o_id_do_filme">Entre com o ID do filme</string>
     <string name="erro_ao_buscar_filme" formatted="false">Erro ao buscar filme: %s</string>
     <string name="erro_desconhecido">Erro desconhecido</string>
+    <string name="detalhes">Detalhes</string>
+    <string name="titulo">Título:</string>
+    <string name="ano">Ano:</string>
+    <string name="data_lancamento">Data de lançamento:</string>
+    <string name="diretor">Diretor:</string>
+    <string name="atores">Atores:</string>
+    <string name="idioma">Idioma:</string>
+    <string name="pais">País:</string>
+    <string name="tipo">Tipo:</string>
+    <string name="produtora">Produtora:</string>
+    <string name="nota_avaliacao">Nota de avaliação:</string>
+    <string name="nota_imdb">Nota IMDb:</string>
 </resources>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLabelTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/titulo"
+        app:layout_constraintTop_toTopOf="@id/tvTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/tvAno"
+        app:layout_constraintStart_toEndOf="@id/tvLabelTitulo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLabelAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/ano"
+        app:layout_constraintTop_toTopOf="@id/tvAno"
+        app:layout_constraintStart_toStartOf="@id/tvLabelTitulo"
+        app:layout_constraintEnd_toStartOf="@id/tvAno" />
+
+    <TextView
+        android:id="@+id/tvAno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintBottom_toTopOf="@id/tvDataLancamento"
+        app:layout_constraintStart_toEndOf="@id/tvLabelAno"
+        app:layout_constraintEnd_toEndOf="@id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvLabelDataLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/data_lancamento"
+        app:layout_constraintTop_toTopOf="@id/tvDataLancamento"
+        app:layout_constraintStart_toStartOf="@id/tvLabelTitulo"
+        app:layout_constraintEnd_toStartOf="@id/tvDataLancamento" />
+
+    <TextView
+        android:id="@+id/tvDataLancamento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@id/tvAno"
+        app:layout_constraintBottom_toTopOf="@id/tvDiretor"
+        app:layout_constraintStart_toEndOf="@id/tvLabelDataLancamento"
+        app:layout_constraintEnd_toEndOf="@id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvLabelDiretor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/diretor"
+        app:layout_constraintTop_toTopOf="@id/tvDiretor"
+        app:layout_constraintStart_toStartOf="@id/tvLabelTitulo"
+        app:layout_constraintEnd_toStartOf="@id/tvDiretor" />
+
+    <TextView
+        android:id="@+id/tvDiretor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@id/tvDataLancamento"
+        app:layout_constraintBottom_toTopOf="@id/tvAtores"
+        app:layout_constraintStart_toEndOf="@id/tvLabelDiretor"
+        app:layout_constraintEnd_toEndOf="@id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvLabelAtores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/atores"
+        app:layout_constraintTop_toTopOf="@id/tvAtores"
+        app:layout_constraintStart_toStartOf="@id/tvLabelTitulo"
+        app:layout_constraintEnd_toStartOf="@id/tvAtores" />
+
+    <TextView
+        android:id="@+id/tvAtores"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@id/tvDiretor"
+        app:layout_constraintBottom_toTopOf="@id/tvIdioma"
+        app:layout_constraintStart_toEndOf="@id/tvLabelAtores"
+        app:layout_constraintEnd_toEndOf="@id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvLabelIdioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/idioma"
+        app:layout_constraintTop_toTopOf="@id/tvIdioma"
+        app:layout_constraintStart_toStartOf="@id/tvLabelTitulo"
+        app:layout_constraintEnd_toStartOf="@id/tvIdioma" />
+
+    <TextView
+        android:id="@+id/tvIdioma"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@id/tvAtores"
+        app:layout_constraintBottom_toTopOf="@id/tvPais"
+        app:layout_constraintStart_toEndOf="@id/tvLabelIdioma"
+        app:layout_constraintEnd_toEndOf="@id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvLabelPais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/pais"
+        app:layout_constraintTop_toTopOf="@id/tvPais"
+        app:layout_constraintStart_toStartOf="@id/tvLabelTitulo"
+        app:layout_constraintEnd_toStartOf="@id/tvPais" />
+
+    <TextView
+        android:id="@+id/tvPais"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@id/tvIdioma"
+        app:layout_constraintBottom_toTopOf="@id/tvNotaAvaliacao"
+        app:layout_constraintStart_toEndOf="@id/tvLabelPais"
+        app:layout_constraintEnd_toEndOf="@id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvLabelNotaAvaliacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/nota_avaliacao"
+        app:layout_constraintTop_toTopOf="@id/tvNotaAvaliacao"
+        app:layout_constraintStart_toStartOf="@id/tvLabelTitulo"
+        app:layout_constraintEnd_toStartOf="@id/tvNotaAvaliacao" />
+
+    <TextView
+        android:id="@+id/tvNotaAvaliacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@id/tvPais"
+        app:layout_constraintBottom_toTopOf="@id/tvNotaImbd"
+        app:layout_constraintStart_toEndOf="@id/tvLabelNotaAvaliacao"
+        app:layout_constraintEnd_toEndOf="@id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvLabelNotaImbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/nota_imdb"
+        app:layout_constraintTop_toTopOf="@id/tvNotaImbd"
+        app:layout_constraintStart_toStartOf="@id/tvLabelTitulo"
+        app:layout_constraintEnd_toStartOf="@id/tvNotaImbd" />
+
+    <TextView
+        android:id="@+id/tvNotaImbd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@id/tvNotaAvaliacao"
+        app:layout_constraintBottom_toTopOf="@id/tvTipo"
+        app:layout_constraintStart_toEndOf="@id/tvLabelNotaImbd"
+        app:layout_constraintEnd_toEndOf="@id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvLabelTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/tipo"
+        app:layout_constraintTop_toTopOf="@id/tvTipo"
+        app:layout_constraintStart_toStartOf="@id/tvLabelTitulo"
+        app:layout_constraintEnd_toStartOf="@id/tvTipo" />
+
+    <TextView
+        android:id="@+id/tvTipo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@id/tvNotaImbd"
+        app:layout_constraintBottom_toTopOf="@id/tvProdutora"
+        app:layout_constraintStart_toEndOf="@id/tvLabelTipo"
+        app:layout_constraintEnd_toEndOf="@id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvLabelProdutora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="@string/produtora"
+        app:layout_constraintTop_toTopOf="@id/tvProdutora"
+        app:layout_constraintStart_toStartOf="@id/tvLabelTitulo"
+        app:layout_constraintEnd_toStartOf="@id/tvProdutora" />
+
+    <TextView
+        android:id="@+id/tvProdutora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@id/tvTipo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvLabelProdutora"
+        app:layout_constraintEnd_toEndOf="@id/tvTitulo" />
+
+</android.support.constraint.ConstraintLayout>
